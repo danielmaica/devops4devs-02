@@ -18,9 +18,9 @@ jobs:
       - name: Construção da Imagem Docker e envio para o Docker Hub
         uses: docker/build-push-action@v6.2.0
         with:
-          context: conversao-temperatura/src
+          context: ./src
           push: true
-          file: ./src/Dockerfile
+          file: src/Review-Filmes.Web/Dockerfile
           tags: | 
             danielmaica/review-filmes:v${{ github.run_number }}
             danielmaica/review-filmes:latest
