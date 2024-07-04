@@ -41,7 +41,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       
-      - name: Configuração do Kubeconig
+      - name: Configuração do Kubeconfig
         run: aws eks update-kubeconfig --name eks-teste
 
       - name: Deploy no Kubernetes
